@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock|Paper|Scissors game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="head-icons">
+                <i class="fa-solid fa-hand-scissors"></i>
+                <i class="fa-solid fa-hand-back-fist"></i>
+                <span>Rock</span>
+                | <span>Paper</span> |
+                <span>Scissors</span>
+                <i class="fa-solid fa-hand-back-fist fa-flip-horizontal"></i>
+                <i class="fa-solid fa-hand-scissors fa-flip-horizontal"></i>
+            </div>
+        </div>
+        <div class="Card-container">
+            <div class="card">
+                <div class="Scores">
+                    <div class="user-score">
+                        <p>User:<span class="points" id="user-points">0</span></p>
+                    </div>
+                    <div class="comp-score">
+                        <p>Computer:<span class="points" id="comp-points">0</span></p>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button class="btn" onclick="playGame('scissors')"><i class="fa-solid fa-hand-scissors"></i></button>
+                    <button class="btn" onclick="playGame('paper')"><i class="fa-solid fa-hand"></i></button>
+                    <button class="btn" onclick="playGame('rock')"><i class="fa-solid fa-hand-back-fist"></i></button>
+                </div>
+                <div class="selection-container">
+                    <div class="user-choice">
+                        <p>User Choice is:<span class="choice" id="user-choice"></span></p>
+                    </div>
+                    <div class="comp-choice">
+                        <p>PC Choice is:<span class="choice" id="comp-choice"></span></p>
+                    </div>
+                </div>
+                <div class="game-result won">
+                    <span class="result" id="results">Won</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="rps.js"></script>
+</body>
+
+</html>
